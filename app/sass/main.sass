@@ -40,13 +40,7 @@
 
 .s-features
   color: $white
-  .s-feat-item
-    margin-bottom: 20px
-    &:hover
-      .img-svg
-        transform: scale(1.1)
-        path
-          fill: $accent
+  .col-sm-3
     &:not(:last-of-type)
       &::after
         font-family: 'FontAwesome', sans-serif
@@ -56,6 +50,14 @@
         right: -7%
         color: $white
         font-size: 30px
+  .s-feat-item
+    margin-bottom: 20px
+    &:hover
+      .img-svg
+        transform: scale(1.1)
+        path
+          fill: $accent
+
   .img-svg
     width: 100px
     height: auto
