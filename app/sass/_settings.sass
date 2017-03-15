@@ -2,19 +2,19 @@
 @import vars
 
 *::-webkit-input-placeholder
-  color: rgba($white, .4)
+  color: rgba($white, .7)
   opacity: 1
 
 *:-moz-placeholder
-  color: rgba($white, .4)
+  color: rgba($white, .7)
   opacity: 1
 
 *::-moz-placeholder
-  color: rgba($white, .4)
+  color: rgba($white, .7)
   opacity: 1
 
 *:-ms-input-placeholder
-  color: rgba($white, .4)
+  color: rgba($white, .7)
   opacity: 1
 
 input:focus::-webkit-input-placeholder,
@@ -39,7 +39,7 @@ body
   color: $color
   font-family: $default-font
   overflow-x: hidden
-  
+
 section
   padding: 50px 0
   h2
@@ -58,7 +58,6 @@ h1
   font-family: "OpenSansLight", sans-serif
   font-size: em(48px)
   line-height: 1.2
-
 
 h2
   font-family: "OpenSansLight", sans-serif
@@ -133,54 +132,55 @@ b, strong
 .button-gray
   background-color: #e8e8e8
   color: #666
-  
+
 //Размытие при всплывающем окне
 *
- transition: filter .25s ease
+  transition: filter .25s ease
+
 .mfp-wrap ~ *
   filter: blur(5px)
-  
+
 //Fade-zoom animation for first dialog
-.my-mfp-zoom-in 
-  .form-callback 
+.my-mfp-zoom-in
+  .form-callback
     opacity: 0
     transform: scale(0.8)
 
-  &.mfp-ready .form-callback 
+  &.mfp-ready .form-callback
     opacity: 1
     transform: scale(1)
 
   &.mfp-removing .portfolio-popup,
-  &.mfp-removing .form-callback 
+  &.mfp-removing .form-callback
     transform: scale(0.8)
     opacity: 0
 
-  &.mfp-bg 
+  &.mfp-bg
     opacity: 0
     transition: opacity 0.3s ease-out
 
-  &.mfp-ready.mfp-bg 
+  &.mfp-ready.mfp-bg
     opacity: 0.8
 
-  &.mfp-removing.mfp-bg 
+  &.mfp-removing.mfp-bg
     opacity: 0
-	
+
 //Попап-форма обратной связи (кастомизация формы, которая внизу)
-.form-callback 
+.form-callback
   position: relative
   overflow: hidden
   +mt(.3s)
   max-width: 320px
   margin: auto
   box-shadow: rgba(0, 0, 0, .3) 0 0 20px
-  .mfp-close 
+  .mfp-close
     color: #fff
     opacity: .3
     +mt(.25s)
-    &:hover 
+    &:hover
       opacity: .6
-  .contact-form-head 
-    h4 
+  .contact-form-head
+    h4
       color: #fff
 
 .success
