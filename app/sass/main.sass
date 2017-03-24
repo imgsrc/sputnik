@@ -27,6 +27,8 @@
     padding-top: 12%
     h1
       margin-bottom: 50px
+    p
+      line-height: 1.7
   .top-form
     background-color: rgba($blue, .8)
     box-shadow: 0 10px 10px rgba($color, .6)
@@ -72,12 +74,14 @@
     font-size: em(18px)
 
 .s-works
-  .col-md-3
-    padding: 5px 5px
+  .col-md-6
+    padding: 10px 10px
   .slide
     position: relative
     overflow: hidden
     display: block
+    img
+
     a
       display: block
     &:hover
@@ -100,9 +104,9 @@
       +mt(.5s)
       transform: scale(1.1)
       .fa
-        color: darken($color, 10%)
+        color: lighten($color, 10%)
         font-size: 40px
-        padding: 20px 20px 5px
+        padding: 30px 20px 5px
   h3
     text-transform: none
     font-size: em(20px)
